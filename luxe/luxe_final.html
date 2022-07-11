@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style1.css">
+    
+
+    <title>Luxe</title>
+    <link rel="shortcut icon" type="image/jpg" href="cobb-2.jpg"/>
+    <style>
+      @media only screen and (max-width: 600px) and (min-width: 240px) {
+
+        #location1212{
+          display: flex;
+          flex-direction: row !important;
+          justify-content: start !important;
+          font-size: 12px;
+          margin-bottom: 5px;
+
+        }
+        #location12122{
+          display: flex;
+          align-items: center;
+          justify-content: start !important;
+          flex-direction: row !important;
+          width: 90%;
+          font-size: 12px;
+
+        }
+        #contact_info h1{
+          text-align: center;
+        }
+        #lastone{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: start !important;
+        }
+
+.row{
+  margin-left: 0px; margin-right:0px;
+}
+#cont1{
+  text-align: justify !important;
+  margin-left: 0px !important;
+}
+#cont2 {
+  text-align: -webkit-match-parent;
+}
+#cont3{
+  text-align: -webkit-match-parent;
+    margin-right: 32px;
+}
+#po1{
+  width: 60px !important;
+}
+#po2{
+  width: 60px !important;
+  margin: 0px !important;
+}
+#po3{
+  width: 60px !important;
+}
+#po4{
+  margin-left: 8px;
+  margin-right: 10px;
+  width: 40px !important;
+}
+#scrollbtn{
+  flex-direction: column-reverse;
+}
+#poo1{
+  margin: 0px !important;
+  padding-right: 50px;
+}
+
+#poo3{
+  margin: 0px !important;
+}
+#poo4{
+  font-size: 12px;
+  margin: 0px !important;
+}
+#cont4{
+  width: 69% !important;
+}
+#cont5{
+  width: 30% !important;
+}
+#cont6{
+
+}
+#po2{
+  margin-left: -126px;
+}
+/* #vm1{
+  width: 106% !important;
+} */
+#vm2{
+  width: 106% !important;
+}
+#newabout{
+  width: 100% !important;
+}
+#newservices{
+  margin-top: -34px;
+}
+#newmap{
+  width: 90% !important;
+  
+
+}
+#lastone1{
+  display: flex;
+
+width: 100% !important;
+}
+#lastone2{
+  display: flex;
+width: 100% !important;
+flex-direction: column;
+justify-content: center;
+padding-left: 110px;
+}
+#lastone {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start !important;
+}
+#last3{
+  text-align: center;
+}
+
+#about1 {
+  text-align: inherit;
+  margin-top: 20px !important;
+  font-size: 11px !important;
+        line-height: 0;
+
+}
+#test1 {
+  flex-direction: column;
+  height: 70%;
+}
+#newabout {
+  width: 100% !important;
+}
+#ourwork1{
+  display: none;
+}
+#ourwork22{
+  display: none;
+}
+#contact10{
+  text-align: center;
+  font-size: 20px;
+}
+#liko{
+  width: 86% !important;
+  margin-left: 22px;
+}
+#unitof{
+  
+  font-size: 20px;
+}
+#privacy{
+  
+  font-size: 15px;
+}
+#mappie{
+
+}
+#pricelist{
+  font-size: 10px;
+}
+      }
+
+
+
+      .text-center {
+        margin-top: 56px;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+      }
+      #cube-container {
+        width: 240px;
+        height: 240px;
+        margin: 80px auto;
+        perspective: 800px;			
+      }
+      
+      #cube-container:before {
+        content: '';
+        position: absolute; 
+        top: 90px;
+        left: 0;
+        width: 100%; 
+        height: 100%;	
+        box-shadow: 0 0 75px 20px rgba(0, 0, 0, 0.1), inset 0 0 350px 350px rgba(0, 0, 0, 0.1);	
+        transform: rotateX(95deg) translateZ(-80px) scale(1);	
+        animation: rotateShadow 16s infinite;	
+      }
+      
+      .cube {	
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;			
+        transition: all 0.8s ease-in-out;		
+        animation: rotate 16s infinite;	
+      }
+      
+      .cube img {
+        position: absolute;
+        width: 240px;
+        height: 240px;		
+        backface-visibility: hidden;		
+      }
+      
+      .cube img:nth-child(1) {
+        transform: rotateY(0deg) translateZ(120px);
+      }
+      .cube img:nth-child(2) {
+        transform: rotateY(90deg) translateZ(120px);
+      }
+      .cube img:nth-child(3) {
+        transform: rotateY(-90deg) translateZ(120px);
+      }
+      .cube img:nth-child(4) {
+        transform: rotateY(180deg) translateZ(120px);
+      }
+      
+      @keyframes rotate {
+        0% { transform: rotateY(0deg); }		
+        25% { transform: rotateY(90deg); }		
+        50% { transform: rotateY(180deg);}	
+        75% {  transform: rotateY(270deg); }	
+        100% { transform: rotateY(360deg); }
+      }
+      
+      @keyframes rotateShadow {
+        0% { transform:  rotateX(95deg) translateZ(-80px) scale(1) rotateZ(360deg); }		
+        25% { transform:  rotateX(95deg) translateZ(-80px) scale(1) rotateZ(270deg); }		
+        50% { transform:  rotateX(95deg) translateZ(-80px) scale(1) rotateZ(180deg);}	
+        75% {  transform: rotateX(95deg) translateZ(-80px) scale(1)  rotateZ(90deg); }	
+        100% { transform: rotateX(95deg) translateZ(-80px) scale(1)  rotateZ(0deg); }
+      }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="" width="100%"> -->
+        
+        <div class="row" id="home" style="margin-left: 0px; margin-right:0px;">
+            <video autoplay muted loop id="myVideo" style="width: 100%; height:'100%'    margin-top: 57px; ">
+                <source src="video12.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span style="color: black;" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav" style=" display: flex;
+              justify-content: center !important;
+              width: 100%;" >
+                <li class="nav-item" title="Home">
+                  <a class="nav-link" href="../index.html" style="color: black;font-family: Myriad Pro;">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" title="About" href="#test1" style="color: black;font-family: Myriad Pro;">WHY LUXE</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" title="Contact" href="#ourwork" style="color: black;font-family: Myriad Pro;">OUR WORK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " title="Pricing" href="#price" style="color: black;font-family: Myriad Pro;">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " title="Pricing" href="#gallery" style="color: black;font-family: Myriad Pro;">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " title="Pricing" href="#newmap" style="color: black;font-family: Myriad Pro;">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " title="Pricing" href="../basic/basic.html" style="color: black;font-family: Myriad Pro;">BASIC</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <div class="floating_btn">
+            <a target="_blank" href="https://wa.me/918130030385">
+              <div class="contact_icon">
+                <i class="fa fa-whatsapp my-float" title="Whatsapp"></i>
+              </div>
+            </a>
+            <div style="background-color: rgba(0, 0, 0, 0.7);
+            border: 1px ;
+            opacity: 0.9; border-radius: 19px;">
+        <a href="https://wa.me/918130030385">
+          <p style=" color:white;     margin-left: 11px;" class="text_icon">click to get your product serviced</p>
+        </a>
+        
+      </div>
+            
+          </div>
+          
+          <div class="row" id="test1"
+          style="position: relative; background-image: url('BG.jpg'); margin-left: 0px; margin-right:0px; justify-content: center; align-items: center;">
+          <br><br>
+          <div style="text-align: center;">
+            <img src="WHY-LUXE.png" alt="" style="width: 60%;">
+          </div>
+    
+    
+          <div id="newabout" style="display: flex; align-items: center; justify-content: center; background-color: white; opacity: 0.9;     width: 60%;     margin-top: 71px;
+              margin-bottom: 125px; border-radius: 23px;">
+        
+          <br>
+          <p class="text-justify"  id="about1"
+            style="font-family: NewsGoth Lt BT Light;text-align: center;  color: black;   margin-top: 50px;font-size: 21px; margin-bottom: 50px;line-height: 2 ;">
+            
+                 The Luxe Category is a premium cleaning and repair service offered by the  <br>
+                 Cobbler & Co. for &nbsp; luxury leather &nbsp; handbags, shoes, jackets, belts, wallets, <br>
+                 etc.! Our &nbsp; charges  are inclusive  of end-to-end cleaning! For example, when   <br>
+                 we receive a dirty bag&nbsp;  for cleaning & color&nbsp; restoration,&nbsp; then we&nbsp; not only <br>
+                 re-color, but also clean up the inside lining, polish up the trims&nbsp; and do any   <br>
+                 do any kind of repair work that&nbsp; comes to our attention!&nbsp; Thus, we &nbsp;adopt a <br>
+                 360-degree approach towards caring for your expensive products! With vast<br>
+                 experience in leather & garment care, we can assure you that the chemicals<br>
+                 and highest&nbsp; standards of&nbsp; quality & environmental &nbsp;sustainability&nbsp; and are  <br>
+                 mostly sourced &nbsp;from EU & USA.&nbsp; Restoring your&nbsp; Luxury gear&nbsp; backto its <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glory, is our responsibility.  <br>
+                  
+
+
+          </p>
+
+        
+      </div>
+    
+    
+        </div>
+        <div>
+          <h1 id="ourwork" class="row justify-content-center" style="font-family: Swis721 LtEx BT Light font;letter-spacing: 10px;">OUR WORK</h1>
+        <div class="row" >
+          <div class="col-md-4" id="ourwork1">
+        <div id = "cube-container">	
+          <div class = "cube">		
+            <img src = "1111.gif">
+            <img src = "1112.gif">
+            <img src = "1113.gif">
+            <img src = "1114.gif">
+            <img src = "1115.gif">
+            <img src = "1116.gif">
+            <img src = "1117.gif">
+            <img src = "1118.gif">
+            
+          </div>		
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id = "cube-container" id="ourwork22">	
+          <div class = "cube">		
+            <img src = "1118.gif">
+            <img src = "1117.gif">
+            <img src = "1115.gif">
+            <img src = "1116.gif">
+            <img src = "1114.gif">
+            <img src = "1113.gif">
+            <img src = "1112.gif">
+            <img src = "1111.gif">
+            
+          </div>		
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id = "cube-container" id="ourwork3">	
+          <div class = "cube">		
+            <img src = "1112.gif">
+            <img src = "1115.gif">
+            <img src = "1116.gif">
+            <img src = "1117.gif">
+            <img src = "1111.gif">
+            <img src = "1113.gif">
+            <img src = "1118.gif">
+            <img src = "1114.gif">
+            
+          </div>		
+          
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+      
+            
+      <div class="row" id="price">
+        <img src="lux-price-guide.png" alt="" style="width:100%; ">
+      </div>
+      <div class="row justify-content-left" id="gallery" style="margin-left: 0px; margin-right:0px;background: url('BG.jpg');" >
+        <a href="Price_list.pdf" download ><h3 id="pricelist" style="font-family: Swis721 LtEx BT Light font; color:rgb(211, 77, 77); background-color:black;border:10px;
+          ">Download Price List</h3></a>
+    </div>
+    
+      
+        
+            
+      
+          
+            
+
+        
+        
+        <div class="row justify-content-center" id="gallery" style="margin-left: 0px; margin-right:0px;background: url('BG.jpg');" >
+            <h1 style="font-family: Swis721 LtEx BT Light font; color:white">GALLERY</h1>
+        </div>
+        <div class="row" style="background: url('BG.jpg');">
+            <div class="carousel-container">
+                <div class="mySlides animate">
+                  <img src="bef aft.jpg" alt="slide" />
+                </div>
+              
+                <div class="mySlides animate">
+                  <img src="shoe bef.jpg" alt="slide" />
+
+                </div>
+              
+                <div class="mySlides animate">
+                  <img src="shoe aftr.jpg" alt="slide" />
+                </div>
+              
+              
+                <!-- Next and previous buttons -->
+                <!-- <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a> -->
+              
+                <!-- The dots/circles -->
+                <div class="dots-container">
+                  <span class="dots" onclick="currentSlide(1)"></span>
+                  <span class="dots" onclick="currentSlide(2)"></span>
+                  <span class="dots" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+            
+        </div>
+        
+        <div class="row" id="test1"
+      style="position: relative; background-image: url('bg-services2.jpg'); margin-left: 0px; margin-right:0px; justify-content: center; align-items: center;">
+
+
+      <div id="newmap" style="display: flex; align-items: center; justify-content: center; background-color: #081A2A;     width: 70%; margin-top: 125px;
+          margin-bottom: 125px; ">
+        <div style="    margin-left: 0px;
+          margin-right: 0px !important;">
+          <br>
+          <h1 id="contact10" class="row justify-content-center" style="font-family: NewsGoth Lt BT Light; color:white;letter-spacing: 10px;" >CONTACT INFORMATION</h1>
+
+
+          <div class="row" id="lastone" style=" display: flex;
+          width: 100%; ">
+            <div id="lastone1" style="width: 40%;">
+              <img id="liko" src="logo.png" alt="" style="width: 85%;">
+            </div>
+            <div id="lastone2" style="width: 60%;">
+              <div class="row" id="location1212" style="display: flex;
+            align-items: center;
+            
+            flex-direction: row;">
+                <img id="po1" src="location.png" alt="" style=" width: 14%; ">
+                <p id="poo1" style="color: white;">RHS2 Sector 42-43 <br>
+                  Rapid Metro station <br>
+                  Golf Course Road <br> Gurugram 122002</p>
+
+
+              </div>
+              <div class="row" id="location1212" style="display: flex;
+            align-items: center;
+            
+            flex-direction: row;">
+                <img id="po2" src="number.png" alt="" style="width: 14%; ">
+                <p id="poo2" style="color:white">+91 9599099688 <br>+91 8130030385</p>
+              </div>
+              <div class="row" id="location1212" style="display: flex;
+            align-items: center;
+            
+            flex-direction: row;">
+                <img id="po3" src="emai.png" alt="" style="width: 14%; ">
+                <p id="poo3" style="color: white;"><a href="">thecobblerco@gmail.com</a></p>
+              </div>
+              <div class="row" id="location1212" style="display: flex;
+            
+            flex-direction: row;">
+                <img id="po4" src="clock.png" alt="" style="width: 16%;">
+                <p id="poo4" style="color: white; margin-top:23px">MONDAY - SUNDAY <br> (10:00AM - 10:00PM)</p>
+              </div>
+            </div>
+
+          </div>
+          <div id="mappie" class="videoWrapper" style="    display: flex;
+                    justify-content: center;">
+           
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.729198378254!2d77.09450901514151!3d28.457578598728453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19ef7cea092b%3A0x8e2e899cf1176a10!2sThe%20Cobbler%20%26%20Co.!5e0!3m2!1sen!2sin!4v1645949306919!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+    <div style="background-color: #081A2A;    margin-top: -10px;
+    ">
+      <div class="col-md-12" style="background:#081A2A">
+        <h1 id="unitof" style="text-align: center; font-family: Myriad Pro; color:white;"> A UNIT OF</h1>
+      </div>
+      <div class="col-md-12" style="background-color: #081A2A; text-align:center">
+        <a href="https://www.astordrycleaners.com/">
+          <img src="astor.png" alt="" width="40%"></a>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="background:#081A2A">
+      <a href="Privacy.pdf" download ><h2 id="privacy" style="color: white;font-family: Myriad Pro;"> Privacy policy</h2></a>&nbsp;&nbsp;&nbsp;<span><h2 id="privacy"  style="color: white;font-family: Myriad Pro;"></h2></span>&nbsp;&nbsp;&nbsp;<span><a href="Terms.pdf" download=""><h2 id="privacy"  style="color: white;font-family: Myriad Pro;">Terms and Conditions</h2></a></span>
+    </div>
+    
+
+<script>
+
+
+let slideIndex = 0;
+showSlides();
+
+// Next-previous control
+function nextSlide() {
+  slideIndex++;
+  showSlides();
+  timer = _timer; // reset timer
+}
+
+function prevSlide() {
+  slideIndex--;
+  showSlides();
+  timer = _timer;
+}
+
+// Thumbnail image controlls
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+  timer = _timer;
+}
+
+function showSlides() {
+  let slides = document.querySelectorAll(".mySlides");
+  let dots = document.querySelectorAll(".dots");
+
+  if (slideIndex > slides.length - 1) slideIndex = 0;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+  
+  // hide all slides
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  
+  // show one slide base on index number
+  slides[slideIndex].style.display = "block";
+  
+  dots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+  
+  dots[slideIndex].classList.add("active");
+}
+
+// autoplay slides --------
+let timer = 7; // sec
+const _timer = timer;
+
+// this function runs every 1 second
+setInterval(() => {
+  timer--;
+
+  if (timer < 1) {
+    nextSlide();
+    timer = _timer; // reset timer
+  }
+}, 1000); // 1sec
+
+
+
+    </script>
+   
+</body>
+</html>

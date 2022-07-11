@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        .ml1 {
+            font-weight: 900;
+            font-size: 3.5em;
+          }
+          
+          .ml1 .letter {
+            display: inline-block;
+            line-height: 1em;
+          }
+          
+          .ml1 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.1em;
+            padding-right: 0.05em;
+            padding-bottom: 0.15em;
+          }
+          
+          .ml1 .line {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: #fff;
+            transform-origin: 0 0;
+          }
+          
+          .ml1 .line1 { top: 0; }
+          .ml1 .line2 { bottom: 0; }
+    </style>
+</head>
+<body style="background: url('BG.jpg') no-repeat center center fixed; height: 100vh;  background-size: cover; margin-left: 0px; margin-right:0px;">
+    <div>
+        <div class="col-md-12" style="text-align: center;"><img src="logo1111.png" alt="" style="width: 16%;"></div>
+    </div>
+    <h1 class="ml1" style="text-align: center;">
+        <span class="text-wrapper" >
+          <span class="line line1"></span>
+          <span class="letters" style="color: white;">About Us</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+      <div id="newabout" >
+        
+          <br>
+          <p  id="about1"
+            style="font-family: NewsGoth Lt BT Light;text-align: center;  color: white;   margin-top: 50px;font-size: 21px; margin-bottom: 50px;line-height: 2 ">
+            Designer Suede & Leather pieces are individual, often expensive and 
+even irreplaceable, making their repair & <br> restoration a specialist undertaking. With unique patterns & textures, suede & leather are prone to staining and damage. <br> Everyday wear, changing climates, dust & improper storage, and even the natural oils present 
+in leather & suede can result <br> in permanent damage, if proper 
+care is not taken.
+
+With decades of experience in the cleaning industry, our team of experts at Cobbler & Co. <br> are more than capable to handle all your designer pieces with utmost care and precision, and restore them back to life.
+
+Our services include designer <br> shoe & bag cleaning; delicate leather, suede
+& fur cleaning and restoration.
+
+
+Providing unmatched quality at extremely reasonable prices makes us  your ideal <br> choice for all  kind of restoration jobs. Be it your daily routine wear or exquisite designer collection, at  Cobbler & Co. we strive very hard to meet all your expectations <br> of shoe & bag care.
+
+
+
+          </p>
+
+        
+      </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+
+
+      <script>
+          // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml1 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml1 .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.ml1 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.ml1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+      </script>
+</body>
+</html>
